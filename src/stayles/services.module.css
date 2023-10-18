@@ -1,0 +1,19 @@
+
+.img{
+    width: 52px;
+    height: 52px;
+    border-radius: 12px;
+    background-color: blue;
+    margin: 0 auto 25px;
+    text-align: center;
+    padding-top:5px ;
+}
+.img svg{
+    color:#fff;
+    margin: auto;
+}
+.text{
+    font-size: 16px;
+    font-weight: 700;
+    color: #2b2b2b;
+}

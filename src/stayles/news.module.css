@@ -1,0 +1,37 @@
+.newsLink{
+    color: #0D2987;
+    font-size: 20px;
+    font-weight: 600;
+}
+.banner{
+    width: 55%;
+    position: relative;
+}
+.banner::after{
+    content: 'Махлиё Джуманёзова, занявшая 3-е место на чемпионате мира ITKF по каратэ-до, прошла в Университете Маъмуна.';
+    position: absolute;
+    left: 7%;
+    bottom: 7%;
+    color: #fff;
+}
+.news{
+    width: 43%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.newsText{
+    margin-left: 15px;
+}
+
+.newsText span{
+    color: #939191;
+    font-size: 14px;
+    font-weight: 500;
+}
+.newsText p{
+    color: #2b2b2b;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 10px;
+}

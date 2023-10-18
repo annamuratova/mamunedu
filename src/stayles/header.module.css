@@ -1,0 +1,49 @@
+
+.header_top{
+    background-color: #0D2987;
+    padding: 20px 0;
+}
+.icons{
+    display: flex;
+    gap: 15px;
+}
+.header_top ul{
+    gap: 20px;
+}
+.header_top ul li{
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+}
+.header_top select{
+    background-color: inherit;
+    border: none;
+    outline: none;
+    width: 75px;
+}
+
+.logo{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    width:30%;
+    text-transform: uppercase;
+    line-height: 1.1;
+    font-weight: 600;
+}
+nav{
+    padding: 25px 0;
+}
+
+.navbar li{
+    margin-left: 10px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #1E1E1E;
+    vertical-align: middle;
+}
+.navbar li a:hover{
+    color: #5d3996;
+}
