@@ -33,3 +33,45 @@ a,span{
     display: inline-block;
 }
 
+.btn.active{
+    background-color: #0D2987;
+    color: #fff;
+}
+.btn{
+    background-color: #F5F7FB;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #2b2b2b;
+    cursor: pointer;
+    padding: 10px 20px;
+    margin-right:10px ;
+}
+svg{
+    width: .8rem;
+ height: 1.2rem; 
+ fill: #fff;                 
+}
+svg.active {
+    transform: rotate(180deg);
+  } 
+  
+.question{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    cursor: pointer;
+    background-color: #0D2987;
+    color: #fff;
+}
+.answer{
+    display: block;
+    overflow: hidden;
+    transition: height ease 0.2s;
+    background-color: #c7cde400;
+    border: 2px solid rgba(230, 226, 226, 0.511); 
+    border-radius: 0px 0px 12px 12px;      
+}
+.answer p{
+    padding: 20px;
+}

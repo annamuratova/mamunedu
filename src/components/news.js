@@ -1,20 +1,22 @@
 import style from '../stayles/news.module.css'
+import {useState} from 'react'
 
 const News = ()=>{
-    const news = [1, 2, 3];
+    const [news, setNews] = useState(true);
+    const newsItem = [1, 2, 3];
     return(
         <div className='sm:container sm:mx-auto px-4'>
             <div className='flex'>
                 <h2 className="title">Последние новости</h2>
                 <a href='' className={style.newsLink}>Все новости ></a>
             </div>
-            <button>Новости</button>
-            <button>Объявления</button>
+            <button className={news === true ? 'btn active': 'btn'} onClick={()=>setNews(true)}>Новости</button>
+            <button className={news === false ? 'btn active': 'btn'} onClick={()=>setNews(false)}>Объявления</button>
             <div className='flex py-5'>
                 <div className={style.banner}><img src='images/banner.png'/></div>
                 <div className={style.news}>
                     {
-                        news.map(()=>{
+                        newsItem.map(()=>{
                             return <div className='flex'>
                                 <img src='images/new.png'/>
                                 <div className={style.newsText}>

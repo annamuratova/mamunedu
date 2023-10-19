@@ -1,0 +1,32 @@
+
+
+.about{
+    background: url(../../public/images/about.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    padding: 80px 0;
+}
+.about div div{
+    justify-content: center;
+    gap: 5px;
+}
+.about h1{
+    font-size: 36px;
+    font-weight: 700px;
+}
+.about p{
+    font-size: 20px;
+    font-weight: 500;
+    max-width: 715px;
+    margin-bottom: 60px;
+}
+.about b{
+    font-size: 40px;
+    font-weight: 700;
+}
+.about span{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+}
