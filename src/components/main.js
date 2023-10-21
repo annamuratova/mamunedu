@@ -3,7 +3,7 @@ import styles from '../stayles/main.module.css'
 function Main(){
     return(
        <div className={styles.main}>
-         <div className='sm:container sm:mx-auto px-4 flex'>
+         <div className='md:container md:mx-auto px-4 flex'>
             <div className={styles.text}>
                 <h1 className={styles.title}>Высочайшее качество и возможности образованияв нашем университете.</h1>
                 <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</p>

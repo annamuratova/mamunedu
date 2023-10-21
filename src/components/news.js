@@ -5,7 +5,7 @@ const News = ()=>{
     const [news, setNews] = useState(true);
     const newsItem = [1, 2, 3];
     return(
-        <div className='sm:container sm:mx-auto px-4'>
+        <div className='md:container md:mx-auto px-4'>
             <div className='flex'>
                 <h2 className="title">Последние новости</h2>
                 <a href='' className={style.newsLink}>Все новости ></a>
@@ -28,6 +28,7 @@ const News = ()=>{
                     }
                 </div>
             </div>
+            <button className={style.newsButton}>Все новости </button>
         </div>
     )
 }

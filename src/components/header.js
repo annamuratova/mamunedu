@@ -2,12 +2,22 @@ import {header} from '../data/header'
 import {menu} from '../data/menu'
 import {icons} from '../data/icons'
 import styles from '../stayles/header.module.css'
+import { useState } from 'react'
 
 const Header = ()=>{
+    const [open, setOpen] = useState(false);
+    function opened(){
+        if(open === false){
+            setOpen(true);
+        }else{
+            setOpen(false)
+        }
+        console.log(open);
+    }
     return(
         <header>
             <div className={styles.header_top}>
-                <div className='sm:container sm:mx-auto px-4 flex'>
+                <div className='md:container md:mx-auto px-4 flex'>
                     <div className={styles.icons}>
                         {
                             icons.map(el =>{
@@ -34,14 +44,14 @@ const Header = ()=>{
                     </ul>
                 </div>
             </div>
-            <nav className='sm:container sm:mx-auto px-4 flex'>
+            <nav className='md:container md:mx-auto px-4 flex'>
                 <div className={styles.logo}>
                     <img src='images/logo.png' alt=''/>
                     <span className=''>Университет Мамуна
                         Негосударственное образовательное учреждение
                     </span>
                 </div>
-                <ul className={styles.navbar}>
+                <ul className={`navbar ${open ? 'open': ''}`}>
                     {
                         menu.map((item)=>{
                             return <li><a href=''>{item.name}</a></li>
@@ -49,7 +59,7 @@ const Header = ()=>{
                     }
                     <li><img src='images/search.png' alt=''></img></li>
                 </ul>
-                
+                <span className={styles.menuBurger} onClick={()=>opened()}></span>   
             </nav>
         </header>
     )

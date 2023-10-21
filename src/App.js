@@ -7,19 +7,20 @@ import About from "./components/about";
 import Partners from "./components/partner";
 import Questions from "./components/questions";
 import Slider from "./components/slider";
+import Footer from "./components/footer";
 
 function App() {
   return(
     <div>
-      <Header />
+      <Header /> 
       <Main />
       <Services />
       <News />
       <About />
-      <Slider />
+      <Slider /> 
       <Partners />
       <Questions />
-
+      <Footer />
     </div>
   )
   }   

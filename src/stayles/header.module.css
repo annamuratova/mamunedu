@@ -37,13 +37,53 @@ nav{
     padding: 25px 0;
 }
 
-.navbar li{
-    margin-left: 10px;
-    font-size: 15px;
-    font-weight: 500;
-    color: #1E1E1E;
-    vertical-align: middle;
+
+.menuBurger{
+    width: 20px;
+    height: 2px;
+    background-color: #000;
+    position: relative;
+    cursor: pointer;
+    display: none;
 }
-.navbar li a:hover{
-    color: #5d3996;
+.menuBurger::after,
+.menuBurger::before{
+    content: '';
+    width: 20px;
+    height: 2px;
+    position: absolute;
+    background-color: #000;
+}
+.menuBurger::before{
+    top: -7px;
+}
+.menuBurger::after{
+    bottom: -7px;
+}
+
+@media (max-width:1020px){
+    .logo{
+        width: 50%;
+    }
+}
+
+
+
+@media (max-width:767px){
+    .header_top ul li{
+        display: none;
+    }
+    .menuBurger{
+        display: block;
+    }
+  .logo{
+    font-size: 12px;
+  }
+    
+}
+
+@media (max-width:590px){
+    .logo{
+        width: 70%;
+    }
 }
