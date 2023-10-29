@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import style from '../stayles/news.module.css'
 import {useState} from 'react'
 
@@ -8,7 +9,7 @@ const News = ()=>{
         <div className='md:container md:mx-auto px-4'>
             <div className='flex'>
                 <h2 className="title">Последние новости</h2>
-                <a href='' className={style.newsLink}>Все новости ></a>
+                <Link to="newsPage" className={style.newsLink}>Все новости ></Link>
             </div>
             <button className={news === true ? 'btn active': 'btn'} onClick={()=>setNews(true)}>Новости</button>
             <button className={news === false ? 'btn active': 'btn'} onClick={()=>setNews(false)}>Объявления</button>
@@ -28,7 +29,7 @@ const News = ()=>{
                     }
                 </div>
             </div>
-            <button className={style.newsButton}>Все новости </button>
+            <button className={style.newsButton}><Link to="newsPage">Все новости</Link> </button>
         </div>
     )
 }

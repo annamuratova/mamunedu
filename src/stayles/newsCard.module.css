@@ -1,0 +1,33 @@
+
+
+.card{
+    margin-bottom: 30px;
+}
+.card img{
+    width: 100%;
+}
+.cardText{
+   padding-top:20px;
+   padding-right: 20px; 
+}
+.cardText span{
+    font-size: 16px;
+    font-weight: 500px;
+    color: #939191;
+}
+.cardText p{
+    font-size: 18px;
+    font-weight: 600;
+    color: #2b2b2b;
+    margin-top: 15px;
+}
+@media(max-width:767px){
+    .cardText{
+        width: 70%;
+    }
+}
+@media(max-width:550px){
+    .cardText{
+        width: 100%;
+    }
+}

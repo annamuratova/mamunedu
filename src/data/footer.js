@@ -5,7 +5,7 @@ export const footerLinks = [
     {link:'Реквизиты'},
     {link:'Устав университета'},
 
-    {link:'Новости'},
+    {link:'Новости', src: 'newsPage'},
     {link:'Объявления'},
     {link:'Фотогалерея'},
     {link:'Видео галерея'},

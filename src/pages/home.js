@@ -9,11 +9,11 @@ import Slider from "../components/slider";
 const Home = ()=>{
     return (
         <div>
-        <Main />
+      <Main />
       <Services />
       <News />
-      <About />
-      <Slider /> 
+      <About /> 
+      <Slider />  
       <Partners />
       <Questions />
         </div>
