@@ -3,6 +3,7 @@ import {menu} from '../data/menu'
 import {icons} from '../data/icons'
 import styles from '../stayles/header.module.css'
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 
 const Header = ()=>{
     const [open, setOpen] = useState(false);
@@ -47,14 +48,14 @@ const Header = ()=>{
             <nav className='md:container md:mx-auto px-4 flex'>
                 <div className={styles.logo}>
                     <img src='images/logo.png' alt=''/>
-                    <span className=''>Университет Мамуна
+                    <Link to="/">Университет Мамуна
                         Негосударственное образовательное учреждение
-                    </span>
+                    </Link>
                 </div>
                 <ul className={`navbar ${open ? 'open': ''}`}>
                     {
                         menu.map((item)=>{
-                            return <li><a href=''>{item.name}</a></li>
+                            return <li><Link to={item.link}>{item.name}</Link></li>
                         })
                     }
                     <li><img src='images/search.png' alt=''></img></li>

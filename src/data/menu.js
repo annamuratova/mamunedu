@@ -1,6 +1,6 @@
 
 export const menu = [
-    {name: 'Университет'},
+    {name: 'Университет', link: 'aboutPage'},
     {name:' Студенты'},
     {name:'Международный'},
     {name:'Сотрудничество'},

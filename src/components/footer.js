@@ -1,6 +1,7 @@
 import { footerLinks } from "../data/footer"
 import { Icon } from '@iconify/react';
 import style from '../stayles/footer.module.css'
+import { Link } from "react-router-dom";
 
 
 const Footer = ()=>{
@@ -25,7 +26,7 @@ const Footer = ()=>{
                     {
                         footerLinks.map((link, index)=>{
                             return <li key={index}>
-                                <a href='#'>{link.link}</a>
+                                <Link to={link.src} >{link.link}</Link>
                             </li>
                         })
                     }    
